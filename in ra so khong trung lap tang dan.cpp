@@ -19,6 +19,13 @@ int main(){
                         //gia tri cua u vao sett(ham set)
     }
 
+        // insert(val): Chèn một giá trị vào Set.
+        // erase(val): Xóa một giá trị khỏi Set.
+        // find(val): Tìm một giá trị trong Set.
+        // size(): Trả về số lượng phần tử trong Set.
+        // empty(): Kiểm tra xem Set có rỗng hay không.
+        // clear(): Xóa tất cả các phần tử khỏi Set.
+    
     for(int s:sett){
         cout<<s<<" "; // vd input 33441122 -> output 1234
     }

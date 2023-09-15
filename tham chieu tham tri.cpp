@@ -3,7 +3,7 @@
 #include <sstream>
 using namespace std;
 
-void set(int *a){
+void set1(int *a){
     *a=10;
 }
 
@@ -13,7 +13,7 @@ void set2(int &a){
 
 int main() {
     int a=1;
-    set(&a);
+    set1(&a);
     cout << a << endl;
     set2(a);
     cout << a<< endl;

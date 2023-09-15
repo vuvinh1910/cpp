@@ -12,10 +12,6 @@ void set2(int &a){
 }
 
 int main() {
-    // string d,a;
-    // getline(cin,d);
-    // cin.ignore();
-    // getline(cin,a);
     int a=1;
     set(&a);
     cout << a << endl;

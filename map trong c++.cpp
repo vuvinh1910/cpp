@@ -23,6 +23,8 @@ int main() {
     }
 
     // In ra các ký tự không lặp
+    //pair thường được sử dụng để đại diện cho cặp key-value. 
+    //Mỗi phần tử trong std::map là một std::pair, trong đó first là value và second là key
     for (const auto &pair : charCount) {
         if (pair.second == 1) {
             cout << pair.first << " ";

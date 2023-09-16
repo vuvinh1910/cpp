@@ -26,5 +26,16 @@ int main() {
     ss2 >> num2;
     cout << num2;
 
+    // ghi vao stringstream
+    int a = 42;
+    int b = 100;
+    int c = 999;
+    stringstream ss;
+    ss<<a;
+    ss<<b;
+    ss<<c;
+    string sss= ss.str();
+    cout << sss; // in ra theo thu tu ghi 42100999
+
     return 0;
 }

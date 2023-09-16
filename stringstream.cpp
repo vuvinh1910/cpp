@@ -9,7 +9,6 @@ int main() {
     double pi;
     string word;
 
-
     //ghi dữ liệu vào biến
     ss >> num >> pi >> word; // 42-3.14-Hello
 
@@ -36,6 +35,21 @@ int main() {
     ss<<c;
     string sss= ss.str(); // ham str cho phep truy cap vao du lieu trong stream
     cout << sss; // in ra theo thu tu ghi 42100999
+
+    
+
+    // ham stringstream co the chuyen doi string thanh int va nguoc lai. vd:
+    // string=12 -> stringstream -> int=12
+    // int=123 -> stringstream -> string=123
+    // thay doi tuy thuoc vao kieu du lieu cua c
+    string b;
+    getline(cin,b); // nhap 123 kieu string
+    stringstream ss(b);
+    int c;  // kieu du lieu int
+    while (ss >> c)
+    {
+        cout << c << endl; // int ra 123 kieu int
+    }
 
     return 0;
 }

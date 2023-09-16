@@ -34,7 +34,7 @@ int main() {
     ss<<a;
     ss<<b;
     ss<<c;
-    string sss= ss.str();
+    string sss= ss.str(); // ham str cho phep truy cap vao du lieu trong stream
     cout << sss; // in ra theo thu tu ghi 42100999
 
     return 0;

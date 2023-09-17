@@ -13,5 +13,7 @@ int main() {
     // s.find(s2) = 2
 
     // ham xoa
+    int t1;cin>>t1;
+    s.erase(s.begin() + t1); // Xóa phần tử tại vị trí t1
     s.erase(s.find(s2),s2.length()+1); // vi tri xoa, do dai xoa bat dau tu vi tri xoa
 }

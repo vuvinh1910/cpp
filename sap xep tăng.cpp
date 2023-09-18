@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int a[5]=5,2,4,1,3;
-sort(a.begin(),a.end()) // xắp xếp tăng dần
+cout << "Sap xep tang: \n";
+sort(arr.begin(), arr.end()); // sắp xếp tăng
+printArray(arr);
+
+cout << "Sap xep giam: \n";
+sort(arr.rbegin(), arr.rend()); // sắp xếp giảm
+printArray(arr);
 }

@@ -7,7 +7,7 @@ struct sinhvien{ // khai báo sinhvien kiểu struct
 };
 
 void nhap( sinhvien& A ){  // hàm nhập tên và tuổi sinh viên, ex về việc truyền struct vào hàm, dấu & là tham chiếu;
-  cin >> A.hoten >> A.tuoi;  // dùng . truy cấp trực tiếp vào đối 
+  cin >> A.hoten >> A.tuoi;  // dùng . truy cấp trực tiếp vào đối tượng trong sinhvien
 }
 
 void nhap2( sinhvien* A){ // cách truyền struct vào hàm bằng con 

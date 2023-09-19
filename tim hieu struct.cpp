@@ -31,5 +31,8 @@ int main(){
   //dùng hàm nhập sinhvien
   nhap(a); nhap2(&a);
 
+
+  //in ra thông tin sinhvien
+  cout << a.hoten << " " << a.tuoi ;
   
 }

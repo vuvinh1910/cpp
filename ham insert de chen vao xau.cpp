@@ -9,6 +9,9 @@ int main() {
     // Sử dụng hàm insert của std::string để chèn ký tự.
     str.insert(position, 1, ch);
 
+    // cụ thể:
+    str.insert(vị trí, từ cần chèn: ch hoặc "4");
+
     std::cout << str << std::endl;
 
     return 0;

@@ -66,6 +66,11 @@ int main(){
   
   //dùng hàm nhập sinhvien
   nhap(a); nhap2(&a);
+
+  // nhập nhiều sinh viên
+  for(int i=0;i<n;i++){
+    nhap(ptrsinhvien[i]);
+  }
   
 
   //hàm tạo sinhvien mới bằng cách gọi hàm con

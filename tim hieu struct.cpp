@@ -60,7 +60,7 @@ int main(){
   delete[] ptrsinhvien; // có thể xóa nếu kết thúc chương trình giúp tiết kiệm bộ nhớ
 
   
-  // khai báo mảng sinhvien bộ nhớ tĩnh(tốn dung lượng, ko xóa được khi kết thúc)
+  // khai báo mảng sinhvien bộ nhớ tĩnh(tốn dung lượng, ko xóa được khi muốn xóa, chỉ bị xóa khi kết thúc ct)
   sinhvien staticsinhvien[100];
 
   

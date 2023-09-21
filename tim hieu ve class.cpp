@@ -9,7 +9,7 @@ public: // Phạm vi truy cập public,
 
     void publicFunction() { // Hàm thành viên public
         // Có thể truy cập các thành phần khác trong class
-        privateFunction(); // truy cập hàm trong private vì private có thể được truy cập trong class
+        privateFunction(); // truy cập được hàm trong private vì private có thể được truy cập trong class
     }
 
 private: // Phạm vi truy cập private,
@@ -29,6 +29,6 @@ int main() {
     obj.publicFunction(); // Có thể gọi hàm thành viên publicFunction vì nó public
     cout << obj.publicVar; // in ra giá trị publicVar
 
-    // Không thể truy cập obj.privateVar và obj.privateFunction từ bên ngoài class vì đó là 
+    // Không thể truy cập obj.privateVar và obj.privateFunction từ bên ngoài class vì đó là private
     return 0;
 }

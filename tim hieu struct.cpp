@@ -57,7 +57,7 @@ int main(){
   sinhvien *ptrsinhvien = new sinhvien[100]; // con trỏ ptr trỏ đến sinhvien, mảng gồm 100 sinhvien
   // hàm new cấp phát bộ nhớ động
   // cách gọi: ptrsinhvien[i].name,... gọi tên sinh viên thứ i
-  delete[] ptrsinhvien; // có thể xóa nếu kết thúc chương trình giúp tiết kiệm bộ nhớ
+  delete[] ptrsinhvien; // có thể xóa bất kì lúc nào giúp tiết kiệm bộ nhớ
 
   
   // khai báo mảng sinhvien bộ nhớ tĩnh(tốn dung lượng, ko xóa được khi muốn xóa, chỉ bị xóa khi kết thúc ct)

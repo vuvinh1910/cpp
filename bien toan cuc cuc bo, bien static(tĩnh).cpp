@@ -5,6 +5,10 @@ using namespace std;
 int bientoancuc = 0; // Các biến khai báo bên ngoài của khối lệnh được gọi là biến toàn cục.
 // biến toàn cục có thời gian tĩnh, nghĩa là chúng được tạo ra khi chương trình bắt đầu và bị hủy khi nó kết thúc
 
+void sett(){
+    bientoancuc = 100; // có thể đổi giá trị biến toàn cục bằng hàm
+}
+
 
 struct NhanVien {
     static int mnv; // khai báo biến tĩnh mnv kiểu int trong struct
@@ -22,6 +26,7 @@ void biencucbo(){
 
 
 int main() {
+    cout << bientoancuc << endl;
 
     cout << ++NhanVien::mnv << endl; // in ra 2
     cout << ++NhanVien::mnv << endl; // in ra 3

@@ -13,6 +13,8 @@ public:
   friend void in(Player& mot);  // hàm in sẽ là bạn của class Player, nó sẽ truy cập đc các biến,hàm private,proteced,.. trong class này
                               // lưu ý, hàm friend in không phải thành viên của class Player như x, set
 
+
+  // định nghĩa trong class + ví dụ sơ qua về operator
   friend Player operator+(const Player&x, int a){  // hiểu đơn giản là: Player = Player + int ;
     Player y;
     y.x=x.x+a;

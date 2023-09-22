@@ -32,10 +32,14 @@ private: // Phạm vi truy cập private,
 
 int main() {
     MyClass obj;  //obj là đối tượng của class MyClass
-  
     obj.publicFunction(); // Có thể gọi hàm thành viên publicFunction vì nó public
-    cout << obj.publicVar; // in ra giá trị publicVar
-
+    cout << obj.publicVar<<endl; // in ra giá trị publicVar
     // Không thể truy cập obj.privateVar và obj.privateFunction từ bên ngoài class vì đó là private
+        
+
+    // khai báo hàm định nghía khởi tạo giá trị
+    MyClass a(100);
+    cout << a.publicVar; // in ra 100;
+        
     return 0;
 }

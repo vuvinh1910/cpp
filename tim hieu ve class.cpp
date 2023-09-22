@@ -13,7 +13,7 @@ public: // Phạm vi truy cập public,
     }
 
 
-    // nếu dùng định nghĩa 2 hàm sau 
+    // nếu dùng định nghĩa 2 hàm sau để khởi tạo giá trị biến:
     MyClass () {}; //định nghĩa hàm MyClass, nếu không có thì khai báo lớp class sẽ bị lỗi vd: MyClass obj ở main
     MyClass(int a1){  // hàm này khởi tạo đối tượng và gán giá trị biến thành viên vd: MyClass obj(5); MyClass(5);
             this->publicVar = a1;  // this->publicVar ám chỉ giá trị publicVar ở class con này chứ không phải publicVar

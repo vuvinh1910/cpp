@@ -17,7 +17,7 @@ public: // Phạm vi truy cập public,
     MyClass () {}; //định nghĩa hàm MyClass, nếu không có thì khai báo lớp class sẽ bị lỗi vd: MyClass obj ở main
     MyClass(int a1){  // hàm này khởi tạo đối tượng và gán giá trị biến thành viên vd: MyClass obj(5); MyClass(5);
             this->publicVar = a1;  // this->publicVar ám chỉ giá trị publicVar ở class con này chứ không phải publicVar
-    }                              // ở class lớn trên kia
+    }                              // các class khác
 
 private: // Phạm vi truy cập private,
          // Các thành phần được khai báo trong phạm vi private không thể truy cập từ bên ngoài class và các đối tượng của class

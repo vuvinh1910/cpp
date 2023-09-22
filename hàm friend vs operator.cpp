@@ -9,6 +9,11 @@ public:
   void set(int x){  // hàm đặt giá trị x
     this->x=x;
   }
+  // tương tự
+  Player (int x){
+    this->x=x;
+  } // ví dụ dùng : Player(2) trong main
+
 
   friend void in(Player& mot);  // hàm in sẽ là bạn của class Player, nó sẽ truy cập đc các biến,hàm private,proteced,.. trong class này
                               // lưu ý, hàm friend in không phải thành viên của class Player như x, set

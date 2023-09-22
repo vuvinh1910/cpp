@@ -10,9 +10,10 @@ int main() {
     str.insert(position, 1, ch);
 
     // cụ thể:
+    // sau khi chèn thì độ dài dãy tự động tăng
     str.insert(vị trí, từ cần chèn: ch hoặc "4");
 
-    std::cout << str << std::endl;
+    std::cout << str << std::endl; // in ra 12345
 
     return 0;
 }

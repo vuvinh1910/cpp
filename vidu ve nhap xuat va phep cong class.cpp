@@ -9,7 +9,7 @@ long long gcd(long long a,long long b){  // hàm tìm ucln
 class PhanSo {
 public:
     long long a, b;
-    PhanSo() : a(0), b(1) {};
+    PhanSo (){};
 
     PhanSo(long long a, long long b){
         this->a = a;

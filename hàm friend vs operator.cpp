@@ -35,7 +35,7 @@ void in(Player& a){       // nếu không khai báo friend in thì hàm in sẽ 
 
 int main(){
   Player x;
-  x.set(2); // đặt x = 2;
+  x.set(2); // đặt x = 2; hoặc dùng Player x(2);
   in(x); // in ra x, có thể dùng hàm friend bất cứ đâu trong chương trình như 1 hàm bình thường,
          // ko cần dùng x.in() vì ko phải là thành viên của class Player
 

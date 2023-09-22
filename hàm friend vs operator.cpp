@@ -6,6 +6,8 @@ class Player
 private:
   int x;
 public:
+  Player () {}; // định nghĩa hàm class nếu không sẽ gặp lỗi khai báo Player x,y; trong các hàm sau
+
   void set(int x){  // hàm đặt giá trị x
     this->x=x;
   }

@@ -6,16 +6,15 @@ class Player
 private:
   int x;
 public:
-  Player () {}; // định nghĩa hàm class nếu không sẽ gặp lỗi khai báo Player x,y; trong các hàm sau
-
-  void set(int x){  // hàm đặt giá trị x
-    this->x=x;
-  }
-  // tương tự
+  Player () {}; // định nghĩa hàm class nếu không sẽ gặp lỗi khai báo Player x,y; trong các hàm sau này
   Player (int x){
     this->x=x;
-  } // ví dụ dùng : Player(2) trong main
+  } // ví dụ dùng : Player a(2) trong main
 
+  // tương tự chức năng hàm sau
+  void set(int x){  // hàm đặt giá trị x
+    this->x=x;      // cách dùng : a.set(6); trong 
+  }
 
   friend void in(Player& mot);  // hàm in sẽ là bạn của class Player, nó sẽ truy cập đc các biến,hàm private,proteced,.. trong class này
                               // lưu ý, hàm friend in không phải thành viên của class Player như x, set

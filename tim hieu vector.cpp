@@ -2,6 +2,12 @@
 #include <vector>
 using namespace std;
 
+void in(vector<int>& b){    // truyen vector vao ham, tham chieu
+    for(int i=0;i<b.size();i++){
+        cout << b[i];
+    }
+}
+
 int main() {
     vector<int> numbers; // Khai báo một vector kiểu int
 

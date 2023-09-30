@@ -31,6 +31,7 @@ int main() {
         }
     }
 
+    charCount.clear() //xóa tất cả phần tử trong map
 
     // insert(): Chèn một cặp key-value vào map.
     // map<int, string> myMap;

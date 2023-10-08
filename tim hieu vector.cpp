@@ -14,6 +14,9 @@ int main() {
     int b = 5;
     vector<int> num2(b); // Khai báo vector c với kích thước 5
 
+    vector<int> rowSum(N, 0);
+    //Dòng mã vector<int> rowSum(N, 0); tạo một vector rowSum có kích thước là N và tất cả các phần tử trong vector được khởi tạo với giá trị 0.
+
 
     numbers.push_back(1);    // Thêm phần tử vào cuối vector
     numbers.push_back(2);

@@ -11,6 +11,9 @@ void in(vector<int>& b){    // truyen vector vao ham, tham chieu
 int main() {
     vector<int> numbers; // Khai báo một vector kiểu int
 
+    vector<vector<int>> A(m, vector<int>(n));// khai báo vector  2 chiều m hàng n cột
+        
+
     int b = 5;
     vector<int> num2(b); // Khai báo vector c với kích thước 5
 

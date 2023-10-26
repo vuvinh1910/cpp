@@ -13,6 +13,10 @@ using namespace std;
 //     return o;
 // }
 
+// Cách dùng cơ bản nhất của hàm sort() là sắp xếp tăng dần các phần tử từ vị trí 
+// i đến vị trí j (lưu ý ở đây ta xét mảng bắt đầu từ vị trí 0)
+   sort(a + i, a + j + 1); // sx từ i đến j
+
 int main() {
     int v;
     cin >> v;

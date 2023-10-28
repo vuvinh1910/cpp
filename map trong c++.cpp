@@ -30,6 +30,10 @@ int main() {
             cout << pair.first << " ";
         }
     }
+    // map sẽ in ra các cặp đã sắp xếp từ bé đến lớn
+    // sắp xếp qua pair.first (value chứ không sắp xếp qua key)
+
+    
 
     charCount.clear() //xóa tất cả phần tử trong map
 

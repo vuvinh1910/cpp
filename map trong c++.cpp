@@ -33,6 +33,11 @@ int main() {
     // map sẽ in ra các cặp đã sắp xếp từ bé đến lớn
     // sắp xếp qua pair.first (value chứ không sắp xếp qua key)
 
+    // duyệt từ cuối dãy tới đầu dãy trong map
+    for (auto it = datename.rbegin(); it != datename.rend(); ++it) {
+        cout << it->second << endl;
+    }
+
     
 
     charCount.clear() //xóa tất cả phần tử trong map

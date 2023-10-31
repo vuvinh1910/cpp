@@ -13,6 +13,7 @@ int main (){
     // khai báo con trỏ file2, mở file PTIT.out và gán địa chỉ vào con trỏ file2
     FILE *file2 = nullptr;
     file2 = fopen("PTIT.out","w");  // mở file PTIT.out với chế độ "w" là WRITE dùng để ghi vào file
+    // chế độ này sẽ xóa tất cả dữ liệu trong file hiện tại và ghi đè bằng dữ liệu mới.
 
   
     char c;  // nên bỏ c = fget(file) trong ngoặc tránh lỗi so sánh

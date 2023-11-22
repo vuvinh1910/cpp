@@ -7,6 +7,9 @@ private:
   int x;
 public:
   Player () {}; // định nghĩa hàm class nếu không sẽ gặp lỗi khai báo Player x,y; trong các hàm sau này
+  // Trong class Player, có một constructor mặc định không có tham số (Player() {}) và một constructor có tham số (Player(int x)).
+  //Constructor không có tham số được sử dụng để tránh lỗi khi khai báo một đối tượng Player mà không có giá trị khởi tạo.
+  //Constructor có tham số giúp tạo đối tượng Player với giá trị khởi tạo cho biến x.
   Player (int x){
     this->x=x;
   } // ví dụ dùng : Player a(2) trong main

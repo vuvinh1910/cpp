@@ -21,7 +21,19 @@ int main(){
 
         // insert(val): Chèn một giá trị vào Set.
         // erase(val): Xóa một giá trị khỏi Set.
+    
         // find(val): Tìm một giá trị trong Set.
+        //Nếu set.find(value) không tìm thấy value trong set,
+        //nó sẽ trả về iterator chỉ đến cuối của set, tức là iterator có giá trị bằng set.end()
+        it = mySet.find(value);
+        if (it != mySet.end()) {
+            cout << "Found!" << endl;
+        } else {
+            cout << "Not found!" << endl;
+        }
+
+        
+    
         // size(): Trả về số lượng phần tử trong Set.
         // empty(): Kiểm tra xem Set có rỗng hay không.
         // clear(): Xóa tất cả các phần tử khỏi Set.

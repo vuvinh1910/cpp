@@ -38,7 +38,20 @@ int main() {
         cout << it->second << endl;
     }
 
-    
+    // vi du ve phan biet pair giua cac map.
+    for (auto&pair_1:mas2)
+    {
+        for (auto&pair_3:mas3)
+        {
+            if(pair_1.second!=0){
+                if(pair_1.first==pair_3.first){
+                    mas4[pair_1.first]++;
+                    pair_1.second=0;
+                }
+            }
+        }
+        
+    }
 
     charCount.clear() //xóa tất cả phần tử trong map
 

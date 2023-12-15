@@ -23,6 +23,25 @@ int main()
 	input.seekg(0,ios::beg); // hàm này đưa con trỏ về vị trí đầu tiên của file, nếu ko có hàm này thì in tiếp ra b.
 	input >> line;
 	cout << line; // sẽ in ra a
+
+
+	// còn đây là đưa con trỏ về đầu dòng của mỗi dòng đọc
+	while (getline(input, line)) {
+        cout << "first " << line << endl;
+
+        // Lưu vị trí bắt đầu của dòng
+        position = input.tellg();
+
+        // Thực hiện một số xử lý khác nếu cần
+        // ...
+
+        // Quay lại vị trí bắt đầu của dòng để đọc lại nếu cần
+        input.seekg(position);
+
+        // Tiếp tục đọc từ đầu dòng
+        //getline(input, line);
+        cout << "again " << line << endl;
+    	}
   
 
   

@@ -7,5 +7,6 @@ printArray(arr);
 
 cout << "Sap xep giam: \n";
 sort(arr.rbegin(), arr.rend()); // sắp xếp giảm
+sort(arr.begin()+n, arr.end(),greater<int>()) //sắp xếp giảm từ vị trí n trở về sau
 printArray(arr);
 }

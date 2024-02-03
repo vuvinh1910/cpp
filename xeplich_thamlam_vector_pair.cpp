@@ -16,19 +16,19 @@ int main() {
         int N;
         cin >> N;
 
-        vector<pair<int, int>> actions;
+        vector<pair<int, int>> actions; // khoi tao cap doi giatri batdau_ketthuc
 
         // Nhập thông tin về thời gian bắt đầu và kết thúc mỗi hành động
         for (int i = 0; i < N; ++i) {
             int Si;
             cin >> Si;
-            actions.push_back({Si, 0});
+            actions.push_back({Si, 0}); // tgian bat dau cuoc hop
         }
 
         for (int i = 0; i < N; ++i) {
             int Fi;
             cin >> Fi;
-            actions[i].second = Fi;
+            actions[i].second = Fi; // tgian ket thuc cuoc hop luu vao bien second
         }
 
         // Sắp xếp các hành động theo thời gian kết thúc tăng dần

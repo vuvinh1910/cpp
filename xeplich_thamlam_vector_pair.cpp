@@ -50,3 +50,27 @@ int main() {
 
     return 0;
 }
+
+
+
+        // string s;cin>>s;
+        // map<char,int>masp;
+        // for (int i = 0; i < s.length(); i++)
+        // {
+        //     masp[s[i]]++;
+        // }
+
+        // vector<pair<char,int>> vect; khoi tao vector co chua 1 cap gia tri char va int.
+
+
+        // truyen pair cua map vao pair cua vector.
+        // for(auto&pair:masp){
+        //     vect.push_back(pair);
+        // }
+
+
+        // // in ra cap doi gia tri char va int cua vector vect.
+        // for (int i = 0; i < vect.size(); i++)
+        // {
+        //     cout << vect[i].first << vect[i].second;
+        // }

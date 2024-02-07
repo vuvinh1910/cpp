@@ -2,6 +2,11 @@
 #include <vector>
 #include <algorithm>
 
+// thuat toan co the dung de giai cho de bai sau:
+// Trên trục Ox tính từ vị trí 0, người ta muốn xếp nhiều nhất các đoạn thẳng sao cho không đoạn nào chồng lấn lên nhau. 
+// Đoạn thẳng thứ i có vị trí bắt đầu là X1[i] và kết thúc tại X2[i], với X1[i] <= X2[i].
+// Hãy tính số đoạn thẳng nhiều nhất có thể được lựa chọn để đưa lên trục Ox và không có đoạn nào chồng lấn lên nhau.
+
 using namespace std;
 
 bool sapXep(const pair<int, int> &a, const pair<int, int> &b) {

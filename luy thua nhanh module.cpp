@@ -12,15 +12,10 @@
 using namespace std;
 
 long long pow_mod(long long a, long long b, long long m) {
-    long long result = 1;
-    while (b > 0) {
-        if (b % 2 == 1) {
-            result = (result * a) % m;
-        }
-        a = (a * a) % m;
-        b /= 2;
-    }
-    return result;
+    if(b==1) return a%m;
+    long long r = pow_mod(a,b/2,m);
+    if(b%2==0) return (r%m*r%m)%m;
+    return (r%m*r%m * a%m)%m
 }
 
 // 1.Chuyển đổi K sang hệ nhị phân.

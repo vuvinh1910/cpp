@@ -18,12 +18,6 @@ long long pow_mod(long long a, long long b, long long m) {
     return (r%m*r%m * a%m)%m
 }
 
-// 1.Chuyển đổi K sang hệ nhị phân.
-// 2.Bắt đầu từ bit cao nhất của K, thực hiện các bước sau:
-// a bằng bình phương a mod m.
-// Nếu bit hiện tại là 1, thì nhân kết quả hiện tại với a và mod m.
-// Kết quả sau khi thực hiện xong các bước trên là N^K % m
-
 // ý tưởng:
     // bình phương và nhân để tính lũy thừa nhanh.
     // f(k)=(x^y)^2 nếu k=2y;

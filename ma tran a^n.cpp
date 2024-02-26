@@ -24,20 +24,12 @@ vector<vector<long long>> multiplyMatrices(const vector<vector<long long>>& a, c
 
 // Hàm chia để trị để tính lũy thừa ma trận
 vector<vector<long long>> matrixPower(const vector<vector<long long>>& matrix, int power, long long mod) {
-    long long size = matrix.size();
-
-    if (power == 1) {
-        return matrix;
-    }
-
-    if (power % 2 == 0) {
-        vector<vector<long long>> halfPower = matrixPower(matrix, power / 2, mod);
-        return multiplyMatrices(halfPower, halfPower, mod);
-    } else {
-        vector<vector<long long>> halfPower = matrixPower(matrix, (power - 1) / 2, mod);
-        return multiplyMatrices(multiplyMatrices(halfPower, halfPower, mod), matrix, mod);
-    }
+    if(power==1) return matrix;
+    vector<vector<long long>> s=matrixPower(matrix,power/2,mod);
+    if(power%2==0) return multiplyMatrices(s,s,mod);
+    else return multiplyMatrices(multiplyMatrices(s,s,mod),matrix,mod);
 }
+
 
 int main() {
     // int t;cin>>t;

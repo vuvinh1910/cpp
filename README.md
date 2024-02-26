@@ -1,1 +1,1 @@
-lien mut chim
+solo yasuo ko tml

@@ -1,33 +1,29 @@
-#include <iostream>
-#include <vector>
-
+#include<bits/stdc++.h>
 using namespace std;
+#define faster() ios_base::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
+long long m = 1000000007;
 
-// Hàm nhân hai ma trận
-vector<vector<long long>> multiplyMatrices(const vector<vector<long long>>& a, const vector<vector<long long>>& b, long long mod) {
-    long long rows_a = a.size();
-    long long cols_a = a[0].size();
-    long long cols_b = b[0].size();
-
-    vector<vector<long long>> result(rows_a, vector<long long>(cols_b, 0));
-
-    for (long long i = 0; i < rows_a; ++i) {
-        for (long long j = 0; j < cols_b; ++j) {
-            for (long long k = 0; k < cols_a; ++k) {
-                result[i][j] = (result[i][j] + ((a[i][k] % mod) * (b[k][j] % mod)) % mod) % mod;
+vector<vector<long long>> nhanmatran(const vector<vector<long long>>&a,const vector<vector<long long>>&b){
+    vector<vector<long long>> kq(2,vector<long long>(2));
+    for (long long i = 0; i < 2; i++)
+    {
+        for (long long j = 0; j < 2; j++)
+        {
+            kq[i][j]=0;
+            for (long long k = 0; k < 2; k++)
+            {
+                kq[i][j] =( kq[i][j]%m + ( a[i][k]%m * b[k][j]%m ) % m ) % m;
             }
         }
     }
-
-    return result;
+    return kq;
 }
 
-// Hàm chia để trị để tính lũy thừa ma trận
-vector<vector<long long>> matrixPower(const vector<vector<long long>>& matrix, int power, long long mod) {
-    if(power==1) return matrix;
-    vector<vector<long long>> s=matrixPower(matrix,power/2,mod);
-    if(power%2==0) return multiplyMatrices(s,s,mod);
-    else return multiplyMatrices(multiplyMatrices(s,s,mod),matrix,mod);
+vector<vector<long long>> pow_matrix(vector<vector<long long>> a,long long pow){
+    if(pow==1) return a;
+    vector<vector<long long>> s = pow_matrix(a,pow/2);
+    if(pow%2==0) return nhanmatran(s,s);
+    else return nhanmatran(nhanmatran(s,s),a);
 }
 
 

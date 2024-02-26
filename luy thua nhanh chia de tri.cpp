@@ -12,6 +12,7 @@
 using namespace std;
 
 long long pow_mod(long long a, long long b, long long m) {
+    if(b==0) return 1;
     if(b==1) return a%m;
     long long r = pow_mod(a,b/2,m);
     if(b%2==0) return (r%m*r%m)%m;

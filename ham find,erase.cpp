@@ -17,6 +17,15 @@ int main() {
     int t=s.find(s2); // vi tri dau tien s2 xuat hien
     if(s.find(s2,t+1)!=string::npos) // kiem tra xem co tim thay s2 xuat hien lan 2 khong
     {cout << s.find(s2,t+1);} // tra ve vi tri s2 xuat hien lan 2
+
+    // find trong vector
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+
+    // Giả sử bạn muốn tìm phần tử có giá trị là 3
+    int value_to_find = 3;
+
+    // Sử dụng std::find để tìm phần tử
+    auto it = std::find(vec.begin(), vec.end(), value_to_find);
     
 
     // ham xoa

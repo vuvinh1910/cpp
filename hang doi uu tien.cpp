@@ -17,6 +17,7 @@ int main() {
         int k;cin>>k;
         string s; cin>>s;
         priority_queue<int , vector<int>> qe; // hang doi uu tien se tu dong sap xep gia tri tu lon den be
+        priority_queue<int, vector<int>,greater<int>> qu; // hang doi uu tien sx tu be den lon
         int solan[300]={0};
         for (int i = 0; i < s.size(); i++)
         {

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+//kq = vị trí đầu tiên của bit 1 khi đổi k sang nhị phân
 #define                     ll long long
 #define faster()            cin.tie(0); ios_base::sync_with_stdio(false); cout.tie(0);
 #define run()               int t; cin >> t; while (t--)

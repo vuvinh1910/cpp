@@ -1,6 +1,6 @@
 // Cho mảng A[], B[] đều có N phần tử. Nhiệm vụ của bạn là tìm giá trị nhỏ nhất của  biểu thức
 // P = A[0]*B[0] + A[1]*B[1] + ..+A[N-1]*B[N-1] bằng cách tráo đổi vị trí các phần tử của cả mảng A[] và B[].
-
+// thuat toan : lay ptu lon nhat day nay nhan voi phan tu nho nhat day kia
 #include<bits/stdc++.h>
 using namespace std;
 
